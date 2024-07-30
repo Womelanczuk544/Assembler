@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Drawing.Common" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\JaAsm\JaAsm.vcxproj" />
+    <ProjectReference Include="..\JaC\JaC.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="JaC">
+      <HintPath>..\JaC\bin\Debug\net6.0\JaC.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
